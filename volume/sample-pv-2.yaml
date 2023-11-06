@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolume
 metadata: 
-  name: sample-pv
+  name: sample-pv-2
   labels: 
     type: gce-pv
     environment: stg
@@ -11,7 +11,7 @@ spec:
   accessModes:  
   - ReadWriteOnce
   persistentVolumeReclaimPolicy: Retain
-  storageClassName: manual
+  storageClassName: manual2
   gcePersistentDisk:
-    pdName: sample-gce-pv
+    pdName: sample-gce-pv-2
     fsType: ext4
